@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="10sp"
+            android:inputType="textCapSentences"
+
+                        android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/userIDTV"
+            android:layout_width="30dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="10sp"
+            android:layout_below="@+id/titleTV"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/bodyTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/userIDTV"
+
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5sp"
+
+            android:textColor="#3F51B5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTV" />
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
